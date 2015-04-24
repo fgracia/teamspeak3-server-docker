@@ -1,11 +1,12 @@
-FROM debian:latest
+FROM debian:wheezy
 
 MAINTAINER Frederic GRACIA <gracia.frederic@gmail.com>
 
-RUN apt-get update
-RUN apt-get install -y curl
+RUN apt-get update && \
+	apt-get install -y curl
+RUN apt-get clean
 
-ADD ./startup.sh /startup.sh
+COPY ./startup.sh /startup.sh
 RUN chmod +x /startup.sh
 
 WORKDIR /opt
