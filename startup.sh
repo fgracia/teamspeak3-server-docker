@@ -8,19 +8,19 @@ fi
     
 if [ -f /opt/teamspeak/ts3server.sqlitedb ]
 then
-	mv /opt/teamspeak/ts3server.sqlitedb /data/ts3server.sqlitedb
+    mv /opt/teamspeak/ts3server.sqlitedb /data/ts3server.sqlitedb
     ln -s /data/ts3server.sqlitedb /opt/teamspeak/ts3server.sqlitedb
 fi
             
 if [ -f /opt/teamspeak/ts3server.sqlitedb ] && [ -f /data/ts3server.sqlitedb ]
 then
-	rm /opt/teamspeak/ts3server.sqlitedb
-	ln -s /data/ts3server.sqlitedb /opt/teamspeak/ts3server.sqlitedb
+    rm /opt/teamspeak/ts3server.sqlitedb
+    ln -s /data/ts3server.sqlitedb /opt/teamspeak/ts3server.sqlitedb
 fi
 
 if [ ! -f /opt/teamspeak/ts3server.sqlitedb ] && [ ! -f /data/ts3server.sqlitedb ]
 then
-	touch /data/ts3server.sqlitedb
+    touch /data/ts3server.sqlitedb
     ln -s /data/ts3server.sqlitedb /opt/teamspeak/ts3server.sqlitedb
 fi             
                     
