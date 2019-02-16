@@ -7,7 +7,7 @@ This is a Dockerfile to deploy TeamSpeak3 Server.
 Here's how you can run the container :
 
 ```
-docker run --restart=always --name ts3server -d -p 9987:9987/udp -p 10011:10011 -p 30033:30033 -v /etc/localtime:/etc/localtime:ro -v /<local-directory-for-db-files>:/data fgracia/ts3server
+docker run --restart=always --name ts3server -d -p 9987:9987/udp -p 10011:10011 -p 30033:30033 -v /etc/localtime:/etc/localtime:ro -v /<local-directory-for-db-files>:/data fgracia/ts3server:3.5.1
 ```
 
 Where :
@@ -24,7 +24,7 @@ If you use post-processing actions, you may need to mount other data volumes.
 
 ## Docker Compose
 
-Because of an hard docker run command to remember, you can use docker-compose (see the YAML script in the compose folder). 
+Because of an hard docker run command to remember, you can use docker-compose (see the YAML script in the compose folder).
 You will juste have to adapt data volumes and then run :
 
 ```
