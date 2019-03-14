@@ -7,7 +7,7 @@ This is a Dockerfile to deploy TeamSpeak3 Server.
 Here's how you can run the container :
 
 ```
-docker run --restart=always --name ts3server -d -p 9987:9987/udp -p 10011:10011 -p 30033:30033 -v /etc/localtime:/etc/localtime:ro -v /<local-directory-for-db-files>:/data fgracia/teamspeak3-server:3.5.1
+docker run --restart=always --name ts3server -d -p 9987:9987/udp -p 10011:10011 -p 30033:30033 -v /etc/localtime:/etc/localtime:ro -v /<local-directory-for-db-files>:/data fgracia/teamspeak3-server:3.6.1
 ```
 
 Where :
