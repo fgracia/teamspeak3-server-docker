@@ -2,7 +2,7 @@ FROM debian:8.11
 
 MAINTAINER Frederic GRACIA <gracia.frederic@gmail.com>
 
-ENV VERSION=3.6.1
+ENV VERSION=3.8.0
 
 RUN apt-get update && \
     apt-get install -y curl bzip2
