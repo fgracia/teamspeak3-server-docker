@@ -1,4 +1,4 @@
-FROM debian:8.11
+FROM debian:9.9
 
 MAINTAINER Frederic GRACIA <gracia.frederic@gmail.com>
 
