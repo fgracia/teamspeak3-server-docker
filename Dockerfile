@@ -1,6 +1,6 @@
 FROM debian:9.9
 
-MAINTAINER Frederic GRACIA <gracia.frederic@gmail.com>
+LABEL maintainer="Frederic GRACIA <gracia.frederic@gmail.com>"
 
 ENV VERSION=3.9.1
 
