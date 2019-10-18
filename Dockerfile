@@ -2,7 +2,7 @@ FROM debian:9.9
 
 MAINTAINER Frederic GRACIA <gracia.frederic@gmail.com>
 
-ENV VERSION=3.8.0
+ENV VERSION=3.9.1
 
 RUN apt-get update && \
     apt-get install -y curl bzip2
@@ -12,7 +12,7 @@ COPY ./startup.sh /startup.sh
 RUN chmod +x /startup.sh
 
 WORKDIR /opt
-RUN curl -o teamspeak3-server_linux_amd64.tar.bz2 http://dl.4players.de/ts/releases/${VERSION}/teamspeak3-server_linux_amd64-${VERSION}.tar.bz2
+RUN curl -o teamspeak3-server_linux_amd64.tar.bz2 https://files.teamspeak-services.com/releases/server/${VERSION}/teamspeak3-server_linux_amd64-${VERSION}.tar.bz2
 RUN tar xfj teamspeak3-server_linux_amd64.tar.bz2 && mv teamspeak3-server_linux_amd64 teamspeak
 RUN rm -f teamspeak3-server_linux_amd64.tar.bz2
 
