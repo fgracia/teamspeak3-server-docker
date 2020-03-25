@@ -2,7 +2,7 @@ FROM debian:9.9
 
 LABEL maintainer="Frederic GRACIA <gracia.frederic@gmail.com>"
 
-ENV VERSION=3.9.1
+ENV VERSION=3.12.0
 
 RUN apt-get update && \
     apt-get install -y curl bzip2
