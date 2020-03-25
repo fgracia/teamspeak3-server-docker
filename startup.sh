@@ -26,5 +26,6 @@ fi
 
 # Run the teamspeak server
 export LD_LIBRARY_PATH=/opt/teamspeak
+export TS3SERVER_LICENSE=accept
 cd /opt/teamspeak
 ./ts3server logpath=/data/logs/ license_accepted=1
