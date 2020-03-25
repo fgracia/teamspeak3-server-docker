@@ -1,5 +1,5 @@
 teamspeak3server:
-  image: fgracia/teamspeak3-server:3.9.1
+  image: fgracia/teamspeak3-server:3.12.0
   ports:
    - "9987:9987/udp"
   volumes:
