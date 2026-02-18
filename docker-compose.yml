@@ -1,8 +1,9 @@
-teamspeak3server:
-  image: fgracia/teamspeak3-server:3.13.3
-  ports:
-   - "9987:9987/udp"
-  volumes:
-   - /etc/localtime:/etc/localtime:ro
-   - /<local-data-for-database-and-logs>:/data
-  restart: always
+services:
+  teamspeak3server:
+    image: fgracia/teamspeak3-server:3.13.7
+    ports:
+      - "9987:9987/udp"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /<local-data-for-database-and-logs>:/data
+    restart: always
