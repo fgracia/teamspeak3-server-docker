@@ -1,8 +1,8 @@
-FROM debian:10.7
+FROM debian:12.13
 
-LABEL maintainer="Frederic GRACIA <gracia.frederic@gmail.com>"
+LABEL maintainer="fgracia"
 
-ENV VERSION=3.13.3
+ENV VERSION=3.13.7
 
 RUN apt-get update && \
     apt-get install -y curl bzip2
