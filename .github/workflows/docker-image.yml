@@ -7,6 +7,7 @@ on:
 jobs:
   login:
     runs-on: ubuntu-latest
+    environment: docker
     steps:
       -
         name: Login to Docker Hub
